@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>你好，世界！</title>
+      <link href="/posts/5285b14b.html"/>
+      <url>/posts/5285b14b.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="hexo-根据头部信息判定是文章">hexo 根据头部信息判定是文章</h2>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> java </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Markdown语法与外挂标签写法汇总</title>
       <link href="/posts/2013454d.html"/>
       <url>/posts/2013454d.html</url>
