@@ -134,6 +134,31 @@
   </entry>
   
   <entry>
+    <title>你好，python！</title>
+    <link href="https://www.adoreorg.cn/posts/5285b14b.html"/>
+    <id>https://www.adoreorg.cn/posts/5285b14b.html</id>
+    <published>2023-01-01T04:00:00.000Z</published>
+    <updated>2023-01-01T04:00:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>这是python的第一篇博客</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;这是python的第一篇博客&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    <category term="python" scheme="https://www.adoreorg.cn/categories/python/"/>
+    
+    
+    <category term="python" scheme="https://www.adoreorg.cn/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
     <title>你好，redis！</title>
     <link href="https://www.adoreorg.cn/posts/5285b14b.html"/>
     <id>https://www.adoreorg.cn/posts/5285b14b.html</id>
@@ -184,27 +209,27 @@
   </entry>
   
   <entry>
-    <title>你好，python！</title>
+    <title>你好，世界！</title>
     <link href="https://www.adoreorg.cn/posts/5285b14b.html"/>
     <id>https://www.adoreorg.cn/posts/5285b14b.html</id>
     <published>2023-01-01T04:00:00.000Z</published>
     <updated>2023-01-01T04:00:00.000Z</updated>
     
-    <content type="html"><![CDATA[<p>这是python的第一篇博客</p>]]></content>
+    <content type="html"><![CDATA[<p>这是算法</p>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;这是python的第一篇博客&lt;/p&gt;
+    <summary type="html">&lt;p&gt;这是算法&lt;/p&gt;
 </summary>
       
     
     
     
-    <category term="python" scheme="https://www.adoreorg.cn/categories/python/"/>
+    <category term="algorithm" scheme="https://www.adoreorg.cn/categories/algorithm/"/>
     
     
-    <category term="python" scheme="https://www.adoreorg.cn/tags/python/"/>
+    <category term="algorithm" scheme="https://www.adoreorg.cn/tags/algorithm/"/>
     
   </entry>
   
@@ -230,31 +255,6 @@
     
     
     <category term="java" scheme="https://www.adoreorg.cn/tags/java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>你好，世界！</title>
-    <link href="https://www.adoreorg.cn/posts/5285b14b.html"/>
-    <id>https://www.adoreorg.cn/posts/5285b14b.html</id>
-    <published>2023-01-01T04:00:00.000Z</published>
-    <updated>2023-01-01T04:00:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>这是算法</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;这是算法&lt;/p&gt;
-</summary>
-      
-    
-    
-    
-    <category term="algorithm" scheme="https://www.adoreorg.cn/categories/algorithm/"/>
-    
-    
-    <category term="algorithm" scheme="https://www.adoreorg.cn/tags/algorithm/"/>
     
   </entry>
   
