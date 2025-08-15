@@ -124,31 +124,6 @@
     
     
     <entry>
-      <title>你好，redis！</title>
-      <link href="/posts/5285b14b.html"/>
-      <url>/posts/5285b14b.html</url>
-      
-        <content type="html"><![CDATA[<p>这是redis的第一篇博客</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> redis </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> redis </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>你好，python！</title>
       <link href="/posts/5285b14b.html"/>
       <url>/posts/5285b14b.html</url>
@@ -178,31 +153,6 @@
       <link href="/posts/5285b14b.html"/>
       <url>/posts/5285b14b.html</url>
       
-        <content type="html"><![CDATA[<p>这是算法</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> algorithm </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> algorithm </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>你好，世界！</title>
-      <link href="/posts/5285b14b.html"/>
-      <url>/posts/5285b14b.html</url>
-      
         <content type="html"><![CDATA[<p>这是mysql</p>]]></content>
       
       
@@ -216,6 +166,56 @@
         <tags>
             
             <tag> mysql </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>你好，redis！</title>
+      <link href="/posts/5285b14b.html"/>
+      <url>/posts/5285b14b.html</url>
+      
+        <content type="html"><![CDATA[<p>这是redis的第一篇博客</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> redis </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> redis </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>你好，世界！</title>
+      <link href="/posts/5285b14b.html"/>
+      <url>/posts/5285b14b.html</url>
+      
+        <content type="html"><![CDATA[<p>这是算法</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> algorithm </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> algorithm </tag>
             
         </tags>
       
