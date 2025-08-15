@@ -4,11 +4,11 @@
   
     
     <entry>
-      <title>你好，世界！</title>
+      <title>你好，python！</title>
       <link href="/posts/5285b14b.html"/>
       <url>/posts/5285b14b.html</url>
       
-        <content type="html"><![CDATA[<p>这是python</p>]]></content>
+        <content type="html"><![CDATA[<p>这是python的第一篇博客</p>]]></content>
       
       
       <categories>
@@ -29,11 +29,11 @@
     
     
     <entry>
-      <title>你好，世界！</title>
+      <title>你好，redis！</title>
       <link href="/posts/5285b14b.html"/>
       <url>/posts/5285b14b.html</url>
       
-        <content type="html"><![CDATA[<p>这是redis</p>]]></content>
+        <content type="html"><![CDATA[<p>这是redis的第一篇博客</p>]]></content>
       
       
       <categories>
