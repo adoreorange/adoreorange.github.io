@@ -81,74 +81,6 @@ $.ajax({
     ipLoacation = res;
   }
 })
-
-// 修复代码块复制功能
-function initCodeCopy() {
-    // 确保复制按钮工作
-    setTimeout(() => {
-        const copyButtons = document.querySelectorAll('.copy-button');
-        copyButtons.forEach(button => {
-            button.addEventListener('click', function(e) {
-                e.preventDefault();
-                const figure = this.closest('figure.highlight');
-                if (figure) {
-                    const code = figure.querySelector('pre code') || figure.querySelector('code');
-                    if (code) {
-                        const text = code.textContent || code.innerText;
-                        
-                        // 使用navigator.clipboard API
-                        if (navigator.clipboard) {
-                            navigator.clipboard.writeText(text).then(() => {
-                                showCopyNotice(this);
-                            }).catch(err => {
-                                console.error('复制失败:', err);
-                                fallbackCopy(text);
-                            });
-                        } else {
-                            fallbackCopy(text);
-                        }
-                    }
-                }
-            });
-        });
-    }, 1000);
-}
-
-function fallbackCopy(text) {
-    const textArea = document.createElement('textarea');
-    textArea.value = text;
-    textArea.style.position = 'fixed';
-    textArea.style.left = '-9999px';
-    document.body.appendChild(textArea);
-    textArea.focus();
-    textArea.select();
-    
-    try {
-        document.execCommand('copy');
-        showCopyNotice(document.querySelector('.copy-button'));
-    } catch (err) {
-        console.error('复制失败:', err);
-    }
-    
-    document.body.removeChild(textArea);
-}
-
-function showCopyNotice(button) {
-    if (button) {
-        const notice = button.parentNode.querySelector('.copy-notice');
-        if (notice) {
-            notice.textContent = '已复制!';
-            notice.style.opacity = '1';
-            setTimeout(() => {
-                notice.style.opacity = '0';
-            }, 2000);
-        }
-    }
-}
-
-// 页面加载完成后初始化代码复制功能
-document.addEventListener('DOMContentLoaded', initCodeCopy);
-document.addEventListener('pjax:complete', initCodeCopy);
 function getDistance(e1, n1, e2, n2) {
   const R = 6371
   const { sin, cos, asin, PI, hypot } = Math
@@ -361,76 +293,6 @@ function showWelcome() {
 window.onload = showWelcome;
 // 如果使用了pjax在加上下面这行代码
 document.addEventListener('pjax:complete', showWelcome);
-
-// 代码折叠功能增强
-function initCodeFold() {
-  // 确保折叠按钮存在且功能正常
-  const codeBlocks = document.querySelectorAll('figure.highlight');
-  
-  codeBlocks.forEach(block => {
-    const tools = block.querySelector('.highlight-tools');
-    if (!tools) return;
-    
-    // 检查是否已有折叠按钮
-    let foldBtn = tools.querySelector('.expand-btn');
-    if (!foldBtn) {
-      // 创建折叠按钮
-      foldBtn = document.createElement('button');
-      foldBtn.className = 'expand-btn';
-      foldBtn.innerHTML = '<i class="fas fa-chevron-down"></i> 展开';
-      foldBtn.title = '展开/折叠代码';
-      
-      // 插入到工具栏
-      tools.insertBefore(foldBtn, tools.firstChild);
-    }
-    
-    // 绑定点击事件
-    foldBtn.addEventListener('click', function() {
-      const isClosed = block.classList.contains('closed');
-      
-      if (isClosed) {
-        // 展开代码
-        block.classList.remove('closed');
-        this.innerHTML = '<i class="fas fa-chevron-up"></i> 折叠';
-        this.classList.add('clicked');
-        
-        // 添加动画效果
-        const height = block.scrollHeight;
-        block.style.maxHeight = height + 'px';
-        setTimeout(() => {
-          block.style.maxHeight = 'none';
-          this.classList.remove('clicked');
-        }, 300);
-      } else {
-        // 折叠代码
-        const height = block.scrollHeight;
-        block.style.maxHeight = height + 'px';
-        
-        setTimeout(() => {
-          block.classList.add('closed');
-          block.style.maxHeight = '230px';
-          this.innerHTML = '<i class="fas fa-chevron-down"></i> 展开';
-          this.classList.add('clicked');
-        }, 10);
-      }
-    });
-    
-    // 根据配置初始化状态
-    const config = window.config || {};
-    if (config.highlight_shrink === true && !block.classList.contains('closed')) {
-      foldBtn.click();
-    }
-  });
-}
-
-// 初始化代码折叠功能
-if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', initCodeFold);
-} else {
-  initCodeFold();
-}
-
-document.addEventListener('pjax:complete', initCodeFold);
 
 /* 欢迎信息 end */
 
@@ -3687,3 +3549,188 @@ function toggleWinbox() {
 }
 
 /* 美化模块 end */
+
+// 代码折叠和复制功能 - 右上角优化
+function initCodeTools() {
+  const codeBlocks = document.querySelectorAll('figure.highlight');
+  
+  codeBlocks.forEach(block => {
+    // 确保有工具栏
+    let tools = block.querySelector('.highlight-tools');
+    if (!tools) {
+      tools = document.createElement('div');
+      tools.className = 'highlight-tools';
+      block.insertBefore(tools, block.firstChild);
+    }
+    
+    // 清理现有按钮
+    tools.innerHTML = '';
+    
+    // 工具栏样式
+    tools.style.cssText = `
+      display: flex; 
+      align-items: center; 
+      justify-content: flex-end; 
+      gap: 8px; 
+      padding: 8px 12px; 
+      background: rgba(248, 249, 250, 0.9); 
+      border-bottom: 1px solid #dee2e6;
+      border-radius: 6px 6px 0 0;
+      backdrop-filter: blur(10px);
+    `;
+    
+    // 折叠按钮
+    const foldBtn = document.createElement('button');
+    foldBtn.innerHTML = '<i class="fas fa-chevron-down"></i>';
+    foldBtn.title = '展开/折叠代码';
+    foldBtn.style.cssText = `
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      background: #6c757d;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 12px;
+      transition: all 0.2s ease;
+    `;
+    
+    // 复制按钮
+    const copyBtn = document.createElement('button');
+    copyBtn.innerHTML = '<i class="fas fa-copy"></i>';
+    copyBtn.title = '复制代码';
+    copyBtn.style.cssText = `
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      background: #28a745;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 12px;
+      transition: all 0.2s ease;
+    `;
+    
+    // 添加悬停效果
+    [foldBtn, copyBtn].forEach(btn => {
+      btn.addEventListener('mouseenter', function() {
+        this.style.transform = 'translateY(-1px)';
+        this.style.boxShadow = '0 2px 8px rgba(0,0,0,0.15)';
+      });
+      btn.addEventListener('mouseleave', function() {
+        this.style.transform = 'translateY(0)';
+        this.style.boxShadow = 'none';
+      });
+    });
+    
+    // 折叠功能
+    foldBtn.addEventListener('click', function() {
+      const isClosed = block.classList.contains('code-folded');
+      
+      if (isClosed) {
+        // 展开
+        block.classList.remove('code-folded');
+        block.style.maxHeight = 'none';
+        this.innerHTML = '<i class="fas fa-chevron-up"></i>';
+        this.style.background = '#6c757d';
+      } else {
+        // 折叠
+        block.classList.add('code-folded');
+        block.style.maxHeight = '180px';
+        block.style.overflow = 'hidden';
+        this.innerHTML = '<i class="fas fa-chevron-down"></i>';
+        this.style.background = '#007bff';
+      }
+    });
+    
+    // 复制功能
+    copyBtn.addEventListener('click', function() {
+      const code = block.querySelector('code') || block.querySelector('pre');
+      if (code) {
+        const text = code.textContent || code.innerText;
+        navigator.clipboard.writeText(text).then(() => {
+          this.innerHTML = '<i class="fas fa-check"></i>';
+          this.style.background = '#ffc107';
+          setTimeout(() => {
+            this.innerHTML = '<i class="fas fa-copy"></i>';
+            this.style.background = '#28a745';
+          }, 1500);
+        }).catch(() => {
+          // 降级方案
+          const textarea = document.createElement('textarea');
+          textarea.value = text;
+          document.body.appendChild(textarea);
+          textarea.select();
+          document.execCommand('copy');
+          document.body.removeChild(textarea);
+          
+          this.innerHTML = '<i class="fas fa-check"></i>';
+          this.style.background = '#ffc107';
+          setTimeout(() => {
+            this.innerHTML = '<i class="fas fa-copy"></i>';
+            this.style.background = '#28a745';
+          }, 1500);
+        });
+      }
+    });
+    
+    // 添加到工具栏
+    tools.appendChild(foldBtn);
+    tools.appendChild(copyBtn);
+  });
+  
+  // 添加必要的CSS
+  if (!document.getElementById('code-tools-css')) {
+    const style = document.createElement('style');
+    style.id = 'code-tools-css';
+    style.textContent = `
+      figure.highlight.code-folded {
+        position: relative;
+      }
+      figure.highlight.code-folded::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 40px;
+        background: linear-gradient(transparent, rgba(248, 249, 250, 0.95));
+        pointer-events: none;
+        border-radius: 0 0 6px 6px;
+      }
+      .highlight-tools button:hover {
+        opacity: 0.9;
+      }
+      .highlight-tools button:active {
+        transform: scale(0.95);
+      }
+      @media (max-width: 768px) {
+        .highlight-tools {
+          padding: 6px 8px;
+          gap: 6px;
+        }
+        .highlight-tools button {
+          width: 24px;
+          height: 24px;
+          font-size: 10px;
+        }
+      }
+    `;
+    document.head.appendChild(style);
+  }
+}
+
+// 初始化代码工具
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initCodeTools);
+} else {
+  initCodeTools();
+}
+
+document.addEventListener('pjax:complete', initCodeTools);
