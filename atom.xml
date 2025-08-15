@@ -23,6 +23,57 @@
     <published>2023-01-01T04:00:00.000Z</published>
     <updated>2023-01-01T04:00:00.000Z</updated>
     
+    
+    
+    
+    <category term="redis" scheme="https://www.adoreorg.cn/categories/redis/"/>
+    
+    
+    <category term="redis" scheme="https://www.adoreorg.cn/tags/redis/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>你好，世界！</title>
+    <link href="https://www.adoreorg.cn/posts/5285b14b.html"/>
+    <id>https://www.adoreorg.cn/posts/5285b14b.html</id>
+    <published>2023-01-01T04:00:00.000Z</published>
+    <updated>2023-01-01T04:00:00.000Z</updated>
+    
+    
+    
+    
+    <category term="mysql" scheme="https://www.adoreorg.cn/categories/mysql/"/>
+    
+    
+    <category term="mysql" scheme="https://www.adoreorg.cn/tags/mysql/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>你好，世界！</title>
+    <link href="https://www.adoreorg.cn/posts/5285b14b.html"/>
+    <id>https://www.adoreorg.cn/posts/5285b14b.html</id>
+    <published>2023-01-01T04:00:00.000Z</published>
+    <updated>2023-01-01T04:00:00.000Z</updated>
+    
+    
+    
+    
+    <category term="algorithm" scheme="https://www.adoreorg.cn/categories/algorithm/"/>
+    
+    
+    <category term="algorithm" scheme="https://www.adoreorg.cn/tags/algorithm/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>你好，世界！</title>
+    <link href="https://www.adoreorg.cn/posts/5285b14b.html"/>
+    <id>https://www.adoreorg.cn/posts/5285b14b.html</id>
+    <published>2023-01-01T04:00:00.000Z</published>
+    <updated>2023-01-01T04:00:00.000Z</updated>
+    
     <content type="html"><![CDATA[<h2 id="hexo-根据头部信息判定是文章">hexo 根据头部信息判定是文章</h2>]]></content>
     
     
@@ -34,8 +85,27 @@
     
     
     
+    <category term="java" scheme="https://www.adoreorg.cn/categories/java/"/>
+    
     
     <category term="java" scheme="https://www.adoreorg.cn/tags/java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>你好，世界！</title>
+    <link href="https://www.adoreorg.cn/posts/5285b14b.html"/>
+    <id>https://www.adoreorg.cn/posts/5285b14b.html</id>
+    <published>2023-01-01T04:00:00.000Z</published>
+    <updated>2023-01-01T04:00:00.000Z</updated>
+    
+    
+    
+    
+    <category term="python" scheme="https://www.adoreorg.cn/categories/python/"/>
+    
+    
+    <category term="python" scheme="https://www.adoreorg.cn/tags/python/"/>
     
   </entry>
   
@@ -57,8 +127,6 @@
     
     
     <category term="Markdown" scheme="https://www.adoreorg.cn/tags/Markdown/"/>
-    
-    <category term="外挂标签" scheme="https://www.adoreorg.cn/tags/%E5%A4%96%E6%8C%82%E6%A0%87%E7%AD%BE/"/>
     
   </entry>
   
