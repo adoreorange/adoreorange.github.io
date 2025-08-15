@@ -81,6 +81,74 @@ $.ajax({
     ipLoacation = res;
   }
 })
+
+// 修复代码块复制功能
+function initCodeCopy() {
+    // 确保复制按钮工作
+    setTimeout(() => {
+        const copyButtons = document.querySelectorAll('.copy-button');
+        copyButtons.forEach(button => {
+            button.addEventListener('click', function(e) {
+                e.preventDefault();
+                const figure = this.closest('figure.highlight');
+                if (figure) {
+                    const code = figure.querySelector('pre code') || figure.querySelector('code');
+                    if (code) {
+                        const text = code.textContent || code.innerText;
+                        
+                        // 使用navigator.clipboard API
+                        if (navigator.clipboard) {
+                            navigator.clipboard.writeText(text).then(() => {
+                                showCopyNotice(this);
+                            }).catch(err => {
+                                console.error('复制失败:', err);
+                                fallbackCopy(text);
+                            });
+                        } else {
+                            fallbackCopy(text);
+                        }
+                    }
+                }
+            });
+        });
+    }, 1000);
+}
+
+function fallbackCopy(text) {
+    const textArea = document.createElement('textarea');
+    textArea.value = text;
+    textArea.style.position = 'fixed';
+    textArea.style.left = '-9999px';
+    document.body.appendChild(textArea);
+    textArea.focus();
+    textArea.select();
+    
+    try {
+        document.execCommand('copy');
+        showCopyNotice(document.querySelector('.copy-button'));
+    } catch (err) {
+        console.error('复制失败:', err);
+    }
+    
+    document.body.removeChild(textArea);
+}
+
+function showCopyNotice(button) {
+    if (button) {
+        const notice = button.parentNode.querySelector('.copy-notice');
+        if (notice) {
+            notice.textContent = '已复制!';
+            notice.style.opacity = '1';
+            setTimeout(() => {
+                notice.style.opacity = '0';
+            }, 2000);
+        }
+    }
+}
+
+// 页面加载完成后初始化代码复制功能
+document.addEventListener('DOMContentLoaded', initCodeCopy);
+document.addEventListener('pjax:complete', initCodeCopy);
 function getDistance(e1, n1, e2, n2) {
   const R = 6371
   const { sin, cos, asin, PI, hypot } = Math

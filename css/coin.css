@@ -14,6 +14,55 @@
   width: auto;
   -webkit-tap-highlight-color: transparent;
 }
+
+/* 修复代码块显示问题 */
+#article-container figure.highlight {
+  max-height: none !important;
+  overflow: visible !important;
+}
+
+#article-container figure.highlight pre {
+  max-height: none !important;
+  overflow-x: auto !important;
+  overflow-y: hidden !important;
+}
+
+/* 确保复制按钮可见 */
+.highlight-tools {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.highlight-tools .copy-button {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.highlight-tools .copy-button:hover {
+  color: #ff6b6b;
+  transform: scale(1.1);
+}
+
+/* 修复代码高度限制 */
+#article-container .highlight-tools ~ .table-container {
+  max-height: none !important;
+}
+
+/* 确保行号显示 */
+figure.highlight table {
+  margin: 0 !important;
+}
+
+figure.highlight .gutter {
+  user-select: none;
+}
+
+/* 移动端适配 */
+@media screen and (max-width: 768px) {
+  #article-container figure.highlight {
+    font-size: 13px;
+  }
+}
 .tip-button:active {
   transform: rotate(4deg);
 }
