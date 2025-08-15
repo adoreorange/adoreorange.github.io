@@ -6579,7 +6579,7 @@ blockquote.pullquote.right {
   border-radius: 2em !important;
 }
 
-/* 字体引入 */
+/* 优设好身体 */
 @font-face {
   font-family: YSHST;
   src: url(https://cdn.jsdelivr.net/gh/adoreorange/pic_bed@main/fonts/YSHST.woff2);
@@ -6591,13 +6591,13 @@ blockquote.pullquote.right {
   src: url(https://cdn.jsdelivr.net/gh/adoreorange/pic_bed@main/fonts/Misans.woff2);
   font-display: swap;
 }
-/* 汉宫字 */
+/* 汉仪唐美人 */
 @font-face {
   font-family: HYTMR;
   src: url(https://cdn.jsdelivr.net/gh/adoreorange/pic_bed@main/fonts/HYTMR.woff2);
   font-display: swap;
 }
-/* 落霞孤鹜 */
+/* 落霞孤鹜文楷体 */
 @font-face {
   font-family: LXGW;
   src: url(https://cdn.jsdelivr.net/gh/adoreorange/pic_bed@main/fonts/LXGW.woff2);
@@ -6617,7 +6617,7 @@ blockquote.pullquote.right {
 }
 /* 阿里巴巴普惠体 */
 @font-face {
-  font-family: ZhuZiAWan;
+  font-family: AlibabaPH;
   src: url(https://cdn.jsdelivr.net/gh/adoreorange/pic_bed@main/fonts/AlibabaPH.woff2);
   font-display: swap;
 }
