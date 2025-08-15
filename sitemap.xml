@@ -74,15 +74,6 @@
   </url>
   
   <url>
-    <loc>https://www.adoreorg.cn/box/gallery/index.html</loc>
-    
-    <lastmod>2023-03-22</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.adoreorg.cn/box/nav/index.html</loc>
     
     <lastmod>2023-03-22</lastmod>
@@ -92,52 +83,7 @@
   </url>
   
   <url>
-    <loc>https://www.adoreorg.cn/site/census/index.html</loc>
-    
-    <lastmod>2023-03-22</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.adoreorg.cn/social/fcircle/index.html</loc>
-    
-    <lastmod>2023-03-22</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.adoreorg.cn/personal/bb/index.html</loc>
-    
-    <lastmod>2023-03-22</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.adoreorg.cn/personal/about/index.html</loc>
-    
-    <lastmod>2023-03-22</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.adoreorg.cn/social/link/index.html</loc>
-    
-    <lastmod>2023-03-22</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.adoreorg.cn/personal/love/index.html</loc>
+    <loc>https://www.adoreorg.cn/box/gallery/index.html</loc>
     
     <lastmod>2023-03-22</lastmod>
     
@@ -155,7 +101,7 @@
   </url>
   
   <url>
-    <loc>https://www.adoreorg.cn/site/time/index.html</loc>
+    <loc>https://www.adoreorg.cn/life/movies/index.html</loc>
     
     <lastmod>2023-03-22</lastmod>
     
@@ -173,7 +119,61 @@
   </url>
   
   <url>
-    <loc>https://www.adoreorg.cn/life/movies/index.html</loc>
+    <loc>https://www.adoreorg.cn/social/fcircle/index.html</loc>
+    
+    <lastmod>2023-03-22</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.adoreorg.cn/social/link/index.html</loc>
+    
+    <lastmod>2023-03-22</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.adoreorg.cn/site/census/index.html</loc>
+    
+    <lastmod>2023-03-22</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.adoreorg.cn/site/time/index.html</loc>
+    
+    <lastmod>2023-03-22</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.adoreorg.cn/personal/about/index.html</loc>
+    
+    <lastmod>2023-03-22</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.adoreorg.cn/personal/love/index.html</loc>
+    
+    <lastmod>2023-03-22</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.adoreorg.cn/personal/bb/index.html</loc>
     
     <lastmod>2023-03-22</lastmod>
     
@@ -254,14 +254,14 @@
 
   
   <url>
-    <loc>https://www.adoreorg.cn/tags/python/</loc>
+    <loc>https://www.adoreorg.cn/tags/redis/</loc>
     <lastmod>2025-08-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.adoreorg.cn/tags/redis/</loc>
+    <loc>https://www.adoreorg.cn/tags/python/</loc>
     <lastmod>2025-08-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -282,7 +282,7 @@
   </url>
   
   <url>
-    <loc>https://www.adoreorg.cn/tags/Markdown/</loc>
+    <loc>https://www.adoreorg.cn/tags/java/</loc>
     <lastmod>2025-08-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -331,13 +331,6 @@
   </url>
   
   <url>
-    <loc>https://www.adoreorg.cn/tags/java/</loc>
-    <lastmod>2025-08-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://www.adoreorg.cn/tags/%E7%BC%93%E5%AD%98/</loc>
     <lastmod>2025-08-15</lastmod>
     <changefreq>weekly</changefreq>
@@ -365,17 +358,24 @@
     <priority>0.2</priority>
   </url>
   
+  <url>
+    <loc>https://www.adoreorg.cn/tags/Markdown/</loc>
+    <lastmod>2025-08-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
 
   
   <url>
-    <loc>https://www.adoreorg.cn/categories/python/</loc>
+    <loc>https://www.adoreorg.cn/categories/redis/</loc>
     <lastmod>2025-08-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.adoreorg.cn/categories/redis/</loc>
+    <loc>https://www.adoreorg.cn/categories/python/</loc>
     <lastmod>2025-08-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -396,13 +396,6 @@
   </url>
   
   <url>
-    <loc>https://www.adoreorg.cn/categories/%E6%BC%94%E7%A4%BA/</loc>
-    <lastmod>2025-08-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://www.adoreorg.cn/categories/java/</loc>
     <lastmod>2025-08-15</lastmod>
     <changefreq>weekly</changefreq>
@@ -411,6 +404,13 @@
   
   <url>
     <loc>https://www.adoreorg.cn/categories/%E6%B5%8B%E8%AF%95/</loc>
+    <lastmod>2025-08-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.adoreorg.cn/categories/%E6%BC%94%E7%A4%BA/</loc>
     <lastmod>2025-08-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
