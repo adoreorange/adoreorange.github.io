@@ -6582,43 +6582,43 @@ blockquote.pullquote.right {
 /* 字体引入 */
 @font-face {
   font-family: YSHST;
-  src: url(https://data-static.netdun.net/Fomalhaut/fonts/优设好身体.woff2);
+  src: url(https://cdn.jsdelivr.net/gh/adoreorange/pic_bed@main/fonts/YSHST.woff2);
   font-display: swap;
 }
-
+/* xiao font */
 @font-face {
   font-family: MiSans;
-  src: url(https://data-static.netdun.net/Fomalhaut/fonts/MiSans.woff2);
+  src: url(https://cdn.jsdelivr.net/gh/adoreorange/pic_bed@main/fonts/Misans.woff2);
   font-display: swap;
 }
-
+/* 汉宫字 */
 @font-face {
   font-family: HYTMR;
-  src: url(https://data-static.netdun.net/Fomalhaut/fonts/HYTangMeiRen55W.woff2);
+  src: url(https://cdn.jsdelivr.net/gh/adoreorange/pic_bed@main/fonts/HYTMR.woff2);
   font-display: swap;
 }
-
+/* 落霞孤鹜 */
 @font-face {
   font-family: LXGW;
-  src: url(https://data-static.netdun.net/Fomalhaut/fonts/霞鹜文楷.woff2);
+  src: url(https://cdn.jsdelivr.net/gh/adoreorange/pic_bed@main/fonts/LXGW.woff2);
   font-display: swap;
 }
-
+/* 甜甜圈 */
 @font-face {
   font-family: TTQHB;
-  src: url(https://data-static.netdun.net/Fomalhaut/fonts/甜甜圈海报字体.woff2);
+  src: url(https://cdn.jsdelivr.net/gh/adoreorange/pic_bed@main/fonts/TTQHB.woff2);
   font-display: swap;
 }
-
+/* consolas */
 @font-face {
   font-family: Consolas_1;
-  src: url(https://data-static.netdun.net/Fomalhaut/fonts/Consolas.woff2);
+  src: url(https://cdn.jsdelivr.net/gh/adoreorange/pic_bed@main/fonts/Consolas.woff2);
   font-display: swap;
 }
-
+/* 阿里巴巴普惠体 */
 @font-face {
   font-family: ZhuZiAWan;
-  src: url(https://data-static.netdun.net/Fomalhaut/fonts/ZhuZiAWan2.woff2);
+  src: url(https://cdn.jsdelivr.net/gh/adoreorange/pic_bed@main/fonts/AlibabaPH.woff2);
   font-display: swap;
 }
 
