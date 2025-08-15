@@ -64,11 +64,40 @@
     
     <category term="redis" scheme="https://www.adoreorg.cn/tags/redis/"/>
     
-    <category term="缓存" scheme="https://www.adoreorg.cn/tags/%E7%BC%93%E5%AD%98/"/>
-    
     <category term="数据库" scheme="https://www.adoreorg.cn/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
+    <category term="缓存" scheme="https://www.adoreorg.cn/tags/%E7%BC%93%E5%AD%98/"/>
+    
     <category term="高性能" scheme="https://www.adoreorg.cn/tags/%E9%AB%98%E6%80%A7%E8%83%BD/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>测试代码复制功能</title>
+    <link href="https://www.adoreorg.cn/posts/cdf39503.html"/>
+    <id>https://www.adoreorg.cn/posts/cdf39503.html</id>
+    <published>2024-01-15T02:00:00.000Z</published>
+    <updated>2025-08-15T08:24:10.790Z</updated>
+    
+    <content type="html"><![CDATA[<h1>测试代码复制功能</h1><p>这是一个测试文章，用于验证代码块的复制按钮是否正常工作。</p><h2 id="Python示例">Python示例</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 这是一个Python示例</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">hello_world</span>():</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;Hello, World!&quot;</span>)</span><br><span class="line">    <span class="keyword">return</span> <span class="string">&quot;复制成功&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&quot;__main__&quot;</span>:</span><br><span class="line">    hello_world()</span><br></pre></td></tr></table></figure><h2 id="JavaScript示例">JavaScript示例</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 这是一个JavaScript示例</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">greet</span>(<span class="params">name</span>) &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">`Hello, <span class="subst">$&#123;name&#125;</span>!`</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="string">&quot;已复制&quot;</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="title function_">greet</span>(<span class="string">&quot;用户&quot;</span>);</span><br></pre></td></tr></table></figure><h2 id="SQL示例">SQL示例</h2><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">-- 这是一个SQL示例</span></span><br><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> users </span><br><span class="line"><span class="keyword">WHERE</span> status <span class="operator">=</span> <span class="string">&#x27;active&#x27;</span> </span><br><span class="line"><span class="keyword">ORDER</span> <span class="keyword">BY</span> created_at <span class="keyword">DESC</span> </span><br><span class="line">LIMIT <span class="number">10</span>;</span><br></pre></td></tr></table></figure><h2 id="长代码测试">长代码测试</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 这是一个较长的代码块，测试复制功能</span></span><br><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">import</span> json</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">fetch_user_data</span>(<span class="params">user_id</span>):</span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    获取用户数据的函数</span></span><br><span class="line"><span class="string">    这个函数较长，用于测试复制按钮是否正常工作</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        url = <span class="string">f&quot;https://api.example.com/users/<span class="subst">&#123;user_id&#125;</span>&quot;</span></span><br><span class="line">        headers = &#123;</span><br><span class="line">            <span class="string">&#x27;User-Agent&#x27;</span>: <span class="string">&#x27;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;Accept&#x27;</span>: <span class="string">&#x27;application/json&#x27;</span></span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        response = requests.get(url, headers=headers)</span><br><span class="line">        response.raise_for_status()</span><br><span class="line">        </span><br><span class="line">        data = response.json()</span><br><span class="line">        </span><br><span class="line">        <span class="comment"># 处理数据</span></span><br><span class="line">        processed_data = &#123;</span><br><span class="line">            <span class="string">&#x27;id&#x27;</span>: data.get(<span class="string">&#x27;id&#x27;</span>),</span><br><span class="line">            <span class="string">&#x27;name&#x27;</span>: data.get(<span class="string">&#x27;name&#x27;</span>),</span><br><span class="line">            <span class="string">&#x27;email&#x27;</span>: data.get(<span class="string">&#x27;email&#x27;</span>),</span><br><span class="line">            <span class="string">&#x27;created_at&#x27;</span>: data.get(<span class="string">&#x27;created_at&#x27;</span>),</span><br><span class="line">            <span class="string">&#x27;status&#x27;</span>: <span class="string">&#x27;active&#x27;</span> <span class="keyword">if</span> data.get(<span class="string">&#x27;is_active&#x27;</span>) <span class="keyword">else</span> <span class="string">&#x27;inactive&#x27;</span></span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">return</span> processed_data</span><br><span class="line">        </span><br><span class="line">    <span class="keyword">except</span> requests.RequestException <span class="keyword">as</span> e:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">f&quot;请求失败: <span class="subst">&#123;e&#125;</span>&quot;</span>)</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">None</span></span><br><span class="line">    <span class="keyword">except</span> json.JSONDecodeError <span class="keyword">as</span> e:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">f&quot;JSON解析失败: <span class="subst">&#123;e&#125;</span>&quot;</span>)</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">None</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 使用示例</span></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&quot;__main__&quot;</span>:</span><br><span class="line">    user_data = fetch_user_data(<span class="number">123</span>)</span><br><span class="line">    <span class="keyword">if</span> user_data:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">f&quot;用户数据: <span class="subst">&#123;user_data&#125;</span>&quot;</span>)</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1&gt;测试代码复制功能&lt;/h1&gt;
+&lt;p&gt;这是一个测试文章，用于验证代码块的复制按钮是否正常工作。&lt;/p&gt;
+&lt;h2 id=&quot;Python示例&quot;&gt;Python示例&lt;/h2&gt;
+&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=</summary>
+      
+    
+    
+    
+    <category term="python" scheme="https://www.adoreorg.cn/categories/python/"/>
+    
+    
+    <category term="测试" scheme="https://www.adoreorg.cn/tags/%E6%B5%8B%E8%AF%95/"/>
+    
+    <category term="代码" scheme="https://www.adoreorg.cn/tags/%E4%BB%A3%E7%A0%81/"/>
     
   </entry>
   
@@ -129,31 +158,6 @@
     <published>2023-01-01T04:00:00.000Z</published>
     <updated>2023-01-01T04:00:00.000Z</updated>
     
-    <content type="html"><![CDATA[<p>这是mysql</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;这是mysql&lt;/p&gt;
-</summary>
-      
-    
-    
-    
-    <category term="mysql" scheme="https://www.adoreorg.cn/categories/mysql/"/>
-    
-    
-    <category term="mysql" scheme="https://www.adoreorg.cn/tags/mysql/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>你好，世界！</title>
-    <link href="https://www.adoreorg.cn/posts/5285b14b.html"/>
-    <id>https://www.adoreorg.cn/posts/5285b14b.html</id>
-    <published>2023-01-01T04:00:00.000Z</published>
-    <updated>2023-01-01T04:00:00.000Z</updated>
-    
     <content type="html"><![CDATA[<p>这是算法</p>]]></content>
     
     
@@ -169,6 +173,31 @@
     
     
     <category term="algorithm" scheme="https://www.adoreorg.cn/tags/algorithm/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>你好，世界！</title>
+    <link href="https://www.adoreorg.cn/posts/5285b14b.html"/>
+    <id>https://www.adoreorg.cn/posts/5285b14b.html</id>
+    <published>2023-01-01T04:00:00.000Z</published>
+    <updated>2023-01-01T04:00:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>这是mysql</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;这是mysql&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    <category term="mysql" scheme="https://www.adoreorg.cn/categories/mysql/"/>
+    
+    
+    <category term="mysql" scheme="https://www.adoreorg.cn/tags/mysql/"/>
     
   </entry>
   
