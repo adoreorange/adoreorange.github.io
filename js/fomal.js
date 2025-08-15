@@ -362,6 +362,76 @@ window.onload = showWelcome;
 // 如果使用了pjax在加上下面这行代码
 document.addEventListener('pjax:complete', showWelcome);
 
+// 代码折叠功能增强
+function initCodeFold() {
+  // 确保折叠按钮存在且功能正常
+  const codeBlocks = document.querySelectorAll('figure.highlight');
+  
+  codeBlocks.forEach(block => {
+    const tools = block.querySelector('.highlight-tools');
+    if (!tools) return;
+    
+    // 检查是否已有折叠按钮
+    let foldBtn = tools.querySelector('.expand-btn');
+    if (!foldBtn) {
+      // 创建折叠按钮
+      foldBtn = document.createElement('button');
+      foldBtn.className = 'expand-btn';
+      foldBtn.innerHTML = '<i class="fas fa-chevron-down"></i> 展开';
+      foldBtn.title = '展开/折叠代码';
+      
+      // 插入到工具栏
+      tools.insertBefore(foldBtn, tools.firstChild);
+    }
+    
+    // 绑定点击事件
+    foldBtn.addEventListener('click', function() {
+      const isClosed = block.classList.contains('closed');
+      
+      if (isClosed) {
+        // 展开代码
+        block.classList.remove('closed');
+        this.innerHTML = '<i class="fas fa-chevron-up"></i> 折叠';
+        this.classList.add('clicked');
+        
+        // 添加动画效果
+        const height = block.scrollHeight;
+        block.style.maxHeight = height + 'px';
+        setTimeout(() => {
+          block.style.maxHeight = 'none';
+          this.classList.remove('clicked');
+        }, 300);
+      } else {
+        // 折叠代码
+        const height = block.scrollHeight;
+        block.style.maxHeight = height + 'px';
+        
+        setTimeout(() => {
+          block.classList.add('closed');
+          block.style.maxHeight = '230px';
+          this.innerHTML = '<i class="fas fa-chevron-down"></i> 展开';
+          this.classList.add('clicked');
+        }, 10);
+      }
+    });
+    
+    // 根据配置初始化状态
+    const config = window.config || {};
+    if (config.highlight_shrink === true && !block.classList.contains('closed')) {
+      foldBtn.click();
+    }
+  });
+}
+
+// 初始化代码折叠功能
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initCodeFold);
+} else {
+  initCodeFold();
+}
+
+document.addEventListener('pjax:complete', initCodeFold);
+
 /* 欢迎信息 end */
 
 //----------------------------------------------------------------
