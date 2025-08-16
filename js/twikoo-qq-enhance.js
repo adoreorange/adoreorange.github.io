@@ -2,7 +2,7 @@
 (function() {
     'use strict';
     
-    // 配置常量
+    // 配置常量 - 使用配置文件中的avatarCDN
     const QQ_AVATAR_URL = 'https://q1.qlogo.cn/g?b=qq&nk={qq}&s=100';
     const QQ_EMAIL_REGEX = /^[1-9][0-9]{4,}@qq\.com$/i;
     
