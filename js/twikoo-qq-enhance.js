@@ -4,6 +4,16 @@
     
     // 配置常量 - 使用配置文件中的avatarCDN
     const QQ_AVATAR_URL = 'https://q1.qlogo.cn/g?b=qq&nk={qq}&s=100';
+    
+    // 阿里云OSS配置
+    const ALIYUN_OSS_CONFIG = {
+        imageUploadEnabled: true,
+        maxUploadSize: 5 * 1024 * 1024, // 5MB
+        uploadEndpoint: 'https://twikoo-images.oss-cn-beijing.aliyuncs.com',
+        supportedFormats: ['jpg', 'jpeg', 'png', 'gif', 'webp'],
+        uploadPath: 'twikoo-images/',
+        region: 'oss-cn-beijing'
+    };
     const QQ_EMAIL_REGEX = /^[1-9][0-9]{4,}@qq\.com$/i;
     
     // 等待Twikoo加载完成
@@ -172,6 +182,43 @@
             }
             .tk-avatar img:hover {
                 transform: scale(1.1) !important;
+            }
+            /* 阿里云OSS上传样式 */
+            .tk-image-upload {
+                margin: 10px 0 !important;
+                border: 2px dashed #00c1de !important;
+                border-radius: 8px !important;
+                padding: 20px !important;
+                text-align: center !important;
+                transition: all 0.3s ease !important;
+            }
+            
+            .tk-image-upload:hover {
+                border-color: #1890ff !important;
+                background-color: rgba(0, 193, 222, 0.05) !important;
+            }
+            
+            .tk-image-preview {
+                max-width: 100% !important;
+                height: auto !important;
+                border-radius: 8px !important;
+                box-shadow: 0 4px 12px rgba(0,0,0,0.15) !important;
+                margin: 10px 0 !important;
+            }
+            
+            .tk-upload-progress {
+                width: 100% !important;
+                height: 4px !important;
+                background-color: #f0f0f0 !important;
+                border-radius: 2px !important;
+                overflow: hidden !important;
+                margin: 10px 0 !important;
+            }
+            
+            .tk-upload-progress-bar {
+                height: 100% !important;
+                background-color: #00c1de !important;
+                transition: width 0.3s ease !important;
             }
         `;
         document.head.appendChild(style);
