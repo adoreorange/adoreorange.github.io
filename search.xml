@@ -124,11 +124,11 @@
     
     
     <entry>
-      <title>你好，python3！</title>
+      <title>你好，python！</title>
       <link href="/posts/5285b14b.html"/>
       <url>/posts/5285b14b.html</url>
       
-        <content type="html"><![CDATA[<p>这是python的第一篇博客<br>$$<br>\Gamma(z)=\int_0^\infty t^{z-1}e^{-t}dt.<br>$$</p>]]></content>
+        <content type="html"><![CDATA[<p>这是python的第一篇博客</p>]]></content>
       
       
       <categories>
@@ -149,11 +149,11 @@
     
     
     <entry>
-      <title>你好，python！</title>
+      <title>你好，python3！</title>
       <link href="/posts/5285b14b.html"/>
       <url>/posts/5285b14b.html</url>
       
-        <content type="html"><![CDATA[<p>这是python的第一篇博客</p>]]></content>
+        <content type="html"><![CDATA[<p>这是python的第一篇博客<br>$$<br>\Gamma(z)=\int_0^\infty t^{z-1}e^{-t}dt.<br>$$</p>]]></content>
       
       
       <categories>
@@ -228,19 +228,19 @@
       <link href="/posts/5285b14b.html"/>
       <url>/posts/5285b14b.html</url>
       
-        <content type="html"><![CDATA[<p>这是算法</p>]]></content>
+        <content type="html"><![CDATA[<p>这是mysql</p>]]></content>
       
       
       <categories>
           
-          <category> algorithm </category>
+          <category> mysql </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> algorithm </tag>
+            <tag> mysql </tag>
             
         </tags>
       
@@ -328,19 +328,19 @@
       <link href="/posts/5285b14b.html"/>
       <url>/posts/5285b14b.html</url>
       
-        <content type="html"><![CDATA[<p>这是mysql</p>]]></content>
+        <content type="html"><![CDATA[<p>这是算法</p>]]></content>
       
       
       <categories>
           
-          <category> mysql </category>
+          <category> algorithm </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> mysql </tag>
+            <tag> algorithm </tag>
             
         </tags>
       
