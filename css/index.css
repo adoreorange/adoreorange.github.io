@@ -7672,6 +7672,8 @@ button#go-up:hover #percent {
   background-attachment: inherit;
   background-size: cover;
   background-position: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  background-blend-mode: overlay;
 }
 [data-theme="dark"] #aside-content > .card-widget.card-info {
   background-image: url(https://cdn.jsdelivr.net/gh/adoreorange/pic_bed@main/webp/ACGN/2.webp);
@@ -7679,6 +7681,8 @@ button#go-up:hover #percent {
   background-attachment: inherit;
   background-size: cover;
   background-position: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-blend-mode: overlay;
 }
 /* 头像呼吸灯 */
 [data-theme="light"] .avatar-img {
