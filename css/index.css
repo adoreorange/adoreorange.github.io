@@ -7741,7 +7741,7 @@ input#pic-link {
 
 /* heo 加载动画头像 */
 .loading-img {
-  background: url(https://sky-take-out-2026.oss-cn-beijing.aliyuncs.com/1610782804303.jpeg)
+  background: url(https://cdn.jsdelivr.net/gh/adoreorange/pic_bed@main/img/head.webp)
     no-repeat center center;
   background-size: cover;
 }
