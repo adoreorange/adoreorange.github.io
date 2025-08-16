@@ -7670,13 +7670,15 @@ button#go-up:hover #percent {
   background-image: url(https://cdn.jsdelivr.net/gh/adoreorange/pic_bed@main/webp/ACGN/6.webp);
   background-repeat: no-repeat;
   background-attachment: inherit;
-  background-size: 100%;
+  background-size: cover;
+  background-position: center;
 }
 [data-theme="dark"] #aside-content > .card-widget.card-info {
   background-image: url(https://cdn.jsdelivr.net/gh/adoreorange/pic_bed@main/webp/ACGN/2.webp);
   background-repeat: no-repeat;
   background-attachment: inherit;
-  background-size: 100%;
+  background-size: cover;
+  background-position: center;
 }
 /* 头像呼吸灯 */
 [data-theme="light"] .avatar-img {

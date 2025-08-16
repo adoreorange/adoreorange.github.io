@@ -55,9 +55,9 @@
             
             <tag> redis </tag>
             
-            <tag> 缓存 </tag>
-            
             <tag> 数据库 </tag>
+            
+            <tag> 缓存 </tag>
             
             <tag> 高性能 </tag>
             
@@ -149,31 +149,6 @@
     
     
     <entry>
-      <title>你好，python3！</title>
-      <link href="/posts/5285b14b.html"/>
-      <url>/posts/5285b14b.html</url>
-      
-        <content type="html"><![CDATA[<p>这是python的第一篇博客<br>$$<br>\Gamma(z)=\int_0^\infty t^{z-1}e^{-t}dt.<br>$$</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> python </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> python </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>你好，redis！</title>
       <link href="/posts/5285b14b.html"/>
       <url>/posts/5285b14b.html</url>
@@ -191,6 +166,31 @@
         <tags>
             
             <tag> redis </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>你好，python3！</title>
+      <link href="/posts/5285b14b.html"/>
+      <url>/posts/5285b14b.html</url>
+      
+        <content type="html"><![CDATA[<p>这是python的第一篇博客<br>$$<br>\Gamma(z)=\int_0^\infty t^{z-1}e^{-t}dt.<br>$$</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> python </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> python </tag>
             
         </tags>
       
