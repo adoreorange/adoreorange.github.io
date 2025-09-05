@@ -1,0 +1,214 @@
+#bibi {
+    position: relative;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+
+#bibi #more {
+    color: #fff;
+    border: 0;
+    margin: 20px auto;
+    border-radius: .3125rem;
+    display: block;
+    padding: 0 1rem;
+    height: 40px;
+    font-weight: 500;
+    text-align: center;
+    transition: all .5s ease-out;
+    background: linear-gradient(-45deg,#ee7752,#e73c7e,#23a6d5,#23d5ab);
+    background-size: 1000% 1000%;
+    animation: Gradient 60s linear infinite;
+    outline: 0;
+    box-shadow: var(--card-box-shadow)
+}
+
+#bibi .bb-info {
+    font-weight: 700;
+    font-size: 22px
+}
+
+#bibi .bb-card {
+    width: calc((100% - 20px)/ 3);
+    overflow: hidden;
+    break-inside: avoid;
+    padding: 20px;
+    border-radius: 10px;
+    background: var(--color-bb-card);
+    transition: box-shadow .25s;
+    user-select: none;
+    -webkit-user-select: none;
+    margin-bottom: 10px;
+    box-shadow: var(--card-box-shadow)
+}
+
+.bb-card .name {
+    text-shadow: var(--menu-word-shadow)
+}
+
+@media (max-width: 950px) {
+    #bibi .bb-card {
+        width:calc((100% - 10px)/ 2)
+    }
+}
+
+@media (max-width: 550px) {
+    #bibi .bb-card {
+        width:100%
+    }
+}
+
+#bibi .card-header {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px dashed grey;
+    padding-bottom: 10px
+}
+
+#bibi .card-header .avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    overflow: hidden;
+    margin-top: 1px
+}
+
+#bibi .card-header svg {
+    height: 15px;
+    width: 15px;
+    margin-left: 5px;
+    margin-top: 4px
+}
+
+#bibi .card-header .card-time {
+    font-size: 12px
+}
+
+#bibi .card-content {
+    padding: 10px 0;
+    border-bottom: 1px dashed grey;
+    margin-bottom: 10px
+}
+
+#bibi .card-footer {
+    display: flex;
+    justify-content: space-between
+}
+
+#bibi .card-footer .card-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    padding: 0 5px;
+    font-weight: 550;
+    font-size: 14px;
+    user-select: none;
+    -webkit-user-select: none;
+    margin-right: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+    transition: all .3s
+}
+
+#bibi .card-footer .bb-fos {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+#bibi .card-footer .bb-fos svg:hover {
+    transform: scale(1.1);
+    opacity: .8;
+    transition: transform .2s,opacity .2s
+}
+
+#bibi .card-footer .card-label:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,.3)
+}
+
+div#bb_loading img {
+    max-width: 100%;
+    border-radius: 15px
+}
+
+#bibi #bb_loading {
+    text-align: center;
+    left: 50%;
+    display: none
+}
+
+#bibi #more {
+    display: none
+}
+
+#bibi .bb-info-avatar {
+    display: flex;
+    flex-direction: column
+}
+
+body[data-type=bb] #bb-main meting-js {
+    display: block;
+    white-space: normal;
+    transition: all .3s;
+    border-radius: 12px;
+    margin-top: 10px;
+    overflow: hidden;
+    border: var(--bb-meting-border);
+    box-shadow: var(--bb-meting-shadow)
+}
+
+body[data-type=bb] #bb-main meting-js:hover {
+    box-shadow: 0 3px 8px 6px rgba(7,17,27,.2)
+}
+
+[data-theme=dark] body[data-type=bb] #bb-main meting-js .aplayer {
+    filter: brightness(.8)
+}
+
+body[data-type=bb] #bb-main meting-js .aplayer {
+    margin: 0;
+    font-family: inherit!important
+}
+
+body[data-type=bb] #bb-main meting-js .aplayer .aplayer-body {
+    background: var(--bb-meting-bg)
+}
+
+body[data-type=bb] #bb-main meting-js .aplayer .aplayer-body .aplayer-pic {
+    height: 80px!important;
+    width: 80px!important;
+    margin: 5px;
+    border-radius: 10px
+}
+
+body[data-type=bb] #bb-main meting-js .aplayer .aplayer-body .aplayer-info .aplayer-music {
+    color: var(--bb-meting-color)
+}
+
+body[data-type=bb] #bb-main meting-js .aplayer .aplayer-body .aplayer-info .aplayer-lrc p {
+    color: var(--bb-meting-p-color)
+}
+
+body[data-type=bb] #bb-main meting-js .aplayer .aplayer-body .aplayer-info .aplayer-lrc:after {
+    background: linear-gradient(to top,var(--bb-meting-bg),transparent)
+}
+
+body[data-type=bb] #bb-main meting-js .aplayer .aplayer-body .aplayer-info .aplayer-lrc:before {
+    background: linear-gradient(to bottom,var(--bb-meting-bg),transparent)
+}
+
+body[data-type=bb] #bb-main meting-js .aplayer .aplayer-body .aplayer-info .aplayer-lrc p {
+    margin: 0 0 16px 0!important
+}
+
+#bibi .bb-info-avatar span {
+    display: flex;
+    white-space: nowrap;
+    align-items: center
+}
+
+#bb-main {
+    max-width: 100%
+}
